@@ -25,6 +25,20 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- Dubbo Nacos registry dependency -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo-registry-nacos</artifactId>
+            <version>0.0.2</version>
+        </dependency>
+
+        <!-- Keep latest Nacos client version -->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+            <version>[0.6.1,)</version>
+        </dependency>
+
 <!--        加入dubbo依赖-->
         <dependency>
             <groupId>org.apache.dubbo</groupId>
@@ -32,6 +46,12 @@
             <version>${dubbo.version}</version>
         </dependency>
 
+     <!--   <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.6.5</version>
+        </dependency>
+-->
 <!--        加入zookeeper依赖-->
         <dependency>
             <groupId>org.apache.dubbo</groupId>
@@ -39,6 +59,15 @@
             <version>${dubbo.version}</version>
             <type>pom</type>
         </dependency>
+
+        <!-- Alibaba Spring Context extension -->
+     <!--   <dependency>
+            <groupId>com.alibaba.spring</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>1.0.2</version>
+        </dependency>-->
+
+
 
         <dependency>
             <groupId>org.postgresql</groupId>

@@ -1,4 +1,4 @@
-package com.example.dubbo.customer;
+package com.example.dubbo.consumer;
 
 import com.example.dubbo.provider.service.DemoService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
