@@ -6,14 +6,21 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.2.2.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>dubbo</artifactId>
+    <artifactId>dubbo-practice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>dubbo</name>
+    <packaging>pom</packaging>
+    <name>dubbo-practice</name>
     <description>Demo project for Dubbo</description>
 
+
+    <!--模块组合-->
+    <modules>
+        <module>demo-test</module>
+    </modules>
     <properties>
         <java.version>1.8</java.version>
         <dubbo.version>2.7.5</dubbo.version>
@@ -53,27 +60,27 @@
         </dependency>
 -->
 <!--        加入zookeeper依赖-->
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-dependencies-zookeeper</artifactId>
-            <version>${dubbo.version}</version>
-            <type>pom</type>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.dubbo</groupId>-->
+<!--            <artifactId>dubbo-dependencies-zookeeper</artifactId>-->
+<!--            <version>${dubbo.version}</version>-->
+<!--            <type>pom</type>-->
+<!--        </dependency>-->
 
         <!-- Alibaba Spring Context extension -->
      <!--   <dependency>
             <groupId>com.alibaba.spring</groupId>
             <artifactId>spring-context-support</artifactId>
-            <version>1.0.2</version>
+            <version>1distributionManagement.0.2</version>
         </dependency>-->
 
 
 
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.postgresql</groupId>-->
+<!--            <artifactId>postgresql</artifactId>-->
+<!--            <scope>runtime</scope>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

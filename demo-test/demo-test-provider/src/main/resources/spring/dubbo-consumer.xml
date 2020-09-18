@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+
+
+
+
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!--服务消费者-->
+    <dubbo:consumer check="false" group="v1.2"/>
+
+    <!-- Dubbo注册地址 -->
+    <dubbo:registry protocol="nacos"
+                    address="${registry.nacos.address}" group="v1.2"
+                    username="${registry.nacos.usrname}" password="${registry.nacos.password}"/>
+
+</beans>

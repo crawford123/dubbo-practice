@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>dubbo-practice</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>demo-test</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>demo-test</name>
+    <description>demp test.</description>
+
+
+    <!--模块组合-->
+    <modules>
+        <module>demo-test-api</module>
+        <module>demo-test-provider</module>
+    </modules>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <mapper.version>3.3.6</mapper.version>
+        <portal.version>1.6.4-SNAPSHOT</portal.version>
+        <swagger.version>2.8.0</swagger.version>
+        <fastjson.version>1.2.43</fastjson.version>
+        <lombok.version>1.18.4</lombok.version>
+        <guava.version>25.1-jre</guava.version>
+        <swagger.dubbo.version>2.0.1</swagger.dubbo.version>
+        <dubbo.version>2.7.3.x</dubbo.version>
+        <alibaba.druid.version>1.1.19</alibaba.druid.version>
+        <nacos.client.version>1.1.1</nacos.client.version>
+        <poi.version>3.11-beta2</poi.version>
+        <hutool.version>4.6.1</hutool.version>
+        <jedis.version>2.8.2</jedis.version>
+        <pagehelper.version>1.2.5</pagehelper.version>
+        <httpcomponents.version>4.5</httpcomponents.version>
+        <aspectjweaver.version>1.8.9</aspectjweaver.version>
+        <rocketmq.client.version>3.2.6</rocketmq.client.version>
+        <portal.tfs.version>1.6.4-SNAPSHOT</portal.tfs.version>
+        <portal.urule.version>2.1.11</portal.urule.version>
+        <portal.common.dao>1.0.2-SNAPSHOT</portal.common.dao>
+        <portal.redis.version>1.0.0-SNAPSHOT</portal.redis.version>
+    </properties>
+
+
+</project>
